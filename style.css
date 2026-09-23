@@ -73,22 +73,18 @@ body {
   align-items: center;
 
   background:
-    radial-gradient(
-      circle at 80% 30%,
+    radial-gradient(circle at 80% 30%,
       rgba(99, 102, 241, .18),
-      transparent 28%
-    ),
-    radial-gradient(
-      circle at 15% 70%,
+      transparent 28%),
+    radial-gradient(circle at 15% 70%,
       rgba(129, 140, 248, .08),
-      transparent 25%
-    ),
+      transparent 25%),
     var(--bg);
 }
 
 .tag,
 .contact-label,
-.section-heading > span {
+.section-heading>span {
   color: var(--primary-light);
   font-size: .78rem;
   font-weight: 700;
@@ -114,11 +110,9 @@ body {
 }
 
 .hero h1 span {
-  background: linear-gradient(
-    90deg,
-    #818cf8,
-    #c4b5fd
-  );
+  background: linear-gradient(90deg,
+      #818cf8,
+      #c4b5fd);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -162,11 +156,9 @@ body {
   margin: 0 auto;
   padding: 35px 25px;
 
-  background: linear-gradient(
-    145deg,
-    #111827,
-    #0f172a
-  );
+  background: linear-gradient(145deg,
+      #111827,
+      #0f172a);
 
   border: 1px solid rgba(255, 255, 255, .08);
   border-radius: 24px;
@@ -548,11 +540,9 @@ body {
   padding: 100px 0;
 
   background:
-    radial-gradient(
-      circle at 50% 100%,
+    radial-gradient(circle at 50% 100%,
       rgba(99, 102, 241, .16),
-      transparent 40%
-    ),
+      transparent 40%),
     var(--bg-soft);
 }
 
@@ -734,4 +724,45 @@ footer {
     font-size: .9rem;
   }
 
+}
+
+/* =========================
+   LOGO DA NAVBAR
+========================= */
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+
+  object-fit: contain;
+  display: block;
+
+  flex-shrink: 0;
+}
+
+/* Navbar */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #ffffff !important;
+  text-decoration: none;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -.3px;
+}
+
+/* Celular */
+@media (max-width: 767px) {
+  .navbar-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .navbar-brand {
+    gap: 8px;
+    font-size: 1rem;
+  }
 }
